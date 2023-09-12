@@ -3,12 +3,30 @@
     padding: 0;
     box-sizing: border-box;
     border-radius: 7px;
+    transition: .5s;
 }
 
 body{
     width: 100vw;
     height: 100vh;
     display: flex;
+}
+
+#bgCol {
+    margin: 1rem !important;
+}
+
+#bgCol button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#light {
+    background-color: grey;
+    color: white
 }
 
 .container{

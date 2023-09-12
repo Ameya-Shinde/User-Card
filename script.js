@@ -1,5 +1,7 @@
 const storedUserInfo = localStorage.getItem("userInformation");
 const clrBtn = document.getElementById("clr-btn");
+let bgLightBtn = document.getElementById("light");
+let bgDarkBtn = document.getElementById("dark");
 
 if (storedUserInfo) {
     const userInfo = JSON.parse(storedUserInfo);
@@ -48,4 +50,12 @@ function storeUserInfo() {
 clrBtn.addEventListener("click", ()=>{
     localStorage.removeItem("userInformation");
     window.location.reload();
+})
+
+bgDarkBtn.addEventListener("click", () => {
+    document.body.style.backgroundColor = "rgb(50, 50, 50)";
+})
+
+bgLightBtn.addEventListener("click", () => {
+    document.body.style.backgroundColor = "white";
 })
